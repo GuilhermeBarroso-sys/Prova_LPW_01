@@ -1,0 +1,12 @@
+.header {
+  width:100%;
+  margin:0 auto;
+  background-color:var(--blue-light);
+  padding:2%;
+}
+.header-container {
+  max-width:1280px;
+}
+.header-container h1 {
+  color: var(--shape);
+}

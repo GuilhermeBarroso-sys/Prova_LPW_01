@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --background:#f0f2f5;
+  --red: #e52e4d;
+  --green: #33cc95;
+  --blue: #5329cc;
+  --blue-light: #6933ff;
+  --text-title: #363f5f;
+  --text-body: #969cb3;
+  --shape: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+  text-decoration: none;
+}
+html {
+  @media (max-width:1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width:720px) {
+    font-size: 87.7%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+body,input,textarea,button {
+  font-family:'Poppins', sans-serif;
+  font-weight: 400; 
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+  font-weight: 600;
+}
+.headerTitle {
+  font-size:2rem;
+  color: var(--blue-light);
+}
+
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.register {
+  width: 100%;
+  max-width: 580px;
+  margin: 30px auto 0;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  width: 50%;
+  height: 50px;
+  border: 1px var(--text-title) solid;
+  border-spacing: 0;
+}
+th {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  border: 1px black solid;
+  background-color: var(--blue-light);
+  color: var(--shape);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td {
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  border: 1px black solid;
+  
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 0;
+  background: var(--blue-light);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  filter:brightness(1.2);
+}
+
+input,select {
+  padding: 10px;
+  outline:0;
+ 
+  margin-bottom: 10px;
+}
+.buttonDelete{
+  background-color:var(--red);
 }
